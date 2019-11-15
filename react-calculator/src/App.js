@@ -189,7 +189,7 @@ const App = () => {
                 operation: "square"
             });
         }
-        else {
+        else if (calcState.operation === "mod") {
             let answer = calcState.answer;
             let value = calcState.value;
             answer = answer % value;
@@ -200,6 +200,18 @@ const App = () => {
                 realValue: '',
                 operation: "mod"
             });
+        }
+        else if (calcState.value === 8008135 || calcState.value === 80085){
+            setCalc({
+                value: calcState.value,
+                answer: calcState.answer,
+                display: 'Why?',
+                realValue: '',
+                operation: ""
+            });
+        }
+        else {
+            console.log("no operation selected");
         }
 
     }
