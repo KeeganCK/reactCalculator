@@ -1,0 +1,15 @@
+.right {
+	text-align: right;
+	background-color: #4C3838;
+	width: 100%;
+	color: orange;
+	margin: 0px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	border-radius: 6px;
+}
+
+.move {
+	padding-right: 15px;
+	font-size: 30px;
+}
