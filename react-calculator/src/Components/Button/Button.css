@@ -13,7 +13,6 @@
 
 .button1:hover {
 	color: white;
-	background-color: #efefef;
-	color: black;
+	background-color: #222222;
 	cursor: pointer;
 }

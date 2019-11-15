@@ -77,6 +77,19 @@ const App = () => {
         });
     }
 
+    const square = () => {
+        let answer = calcState.answer;
+        let value = calcState.value;
+        answer = value * value;
+        setCalc({
+            value: answer,
+            answer: answer,
+            display: answer,
+            realValue: '',
+            operation: "square"
+        });
+    }
+
 
     const negOne = () => {
         calcState.display = calcState.display * -1;
@@ -125,7 +138,7 @@ const App = () => {
                 answer: answer,
                 display: answer,
                 realValue: calcState.realValue,
-                operation: ""
+                operation: "plus"
             });
         }
         else if(calcState.operation === "sub") {
@@ -137,7 +150,7 @@ const App = () => {
                 answer: answer,
                 display: answer,
                 realValue: '',
-                operation: ""
+                operation: "sub"
             });
         }
         else if(calcState.operation === "multi") {
@@ -149,7 +162,7 @@ const App = () => {
                 answer: answer,
                 display: answer,
                 realValue: '',
-                operation: ""
+                operation: "multi"
             });
         }
         else if(calcState.operation === "div") {
@@ -161,7 +174,19 @@ const App = () => {
                 answer: answer,
                 display: answer,
                 realValue: '',
-                operation: ""
+                operation: "div"
+            });
+        }
+        else if(calcState.operation === "square") {
+            let answer = calcState.answer;
+            let value = calcState.value;
+            answer = answer * answer;
+            setCalc({
+                value: answer,
+                answer: answer,
+                display: answer,
+                realValue: '',
+                operation: "square"
             });
         }
         else {
@@ -173,7 +198,7 @@ const App = () => {
                 answer: answer,
                 display: answer,
                 realValue: '',
-                operation: ""
+                operation: "mod"
             });
         }
 
@@ -192,6 +217,7 @@ const App = () => {
             mul={multi}
             div={div}
             mod={mod}
+            square={square}
         />
     </div>
   );

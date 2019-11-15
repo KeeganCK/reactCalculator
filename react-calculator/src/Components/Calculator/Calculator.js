@@ -37,7 +37,7 @@ const calculator = props => {
 			</div>
 			<div className="rowC">
 				<Button className="zero" value={0} clicked={props.normal}/>
-				<Button value="Useless"/>
+				<Button value="x^2" clicked={props.square}/>
 				<Button value="." clicked={props.normal}/>
 				<Button value="=" clicked={props.equals}/>
 			</div>
