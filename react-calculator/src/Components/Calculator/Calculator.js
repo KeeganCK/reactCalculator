@@ -13,32 +13,32 @@ const calculator = props => {
 			</div>
 			<div className="rowC">
 				<Button value="AC" clicked={props.reset}/>
-				<Button value="+/-"/>
-				<Button value="%"/>
-				<Button value="/"/>
+				<Button value="+/-" clicked={props.neg}/>
+				<Button value="%" clicked={props.mod}/>
+				<Button value="/" clicked={props.div}/>
 			</div>
 			<div className="rowC">
-				<Button value="7" clicked={props.normal}/>
-				<Button value="8" clicked={props.normal}/>
-				<Button value="9" clicked={props.normal}/>
-				<Button value="X"/>
+				<Button value={7} clicked={props.normal}/>
+				<Button value={8} clicked={props.normal}/>
+				<Button value={9} clicked={props.normal}/>
+				<Button value="X" clicked={props.mul}/>
 			</div>
 			<div className="rowC">
-				<Button value="4" clicked={props.normal}/>
-				<Button value="5" clicked={props.normal}/>
-				<Button value="6" clicked={props.normal}/>
+				<Button value={4} clicked={props.normal}/>
+				<Button value={5} clicked={props.normal}/>
+				<Button value={6} clicked={props.normal}/>
 				<Button value="-" clicked={props.sub}/>
 			</div>
 			<div className="rowC">
-				<Button value="1" clicked={props.normal}/>
-				<Button value="2" clicked={props.normal}/>
-				<Button value="3" clicked={props.normal}/>
+				<Button value={1} clicked={props.normal}/>
+				<Button value={2} clicked={props.normal}/>
+				<Button value={3} clicked={props.normal}/>
 				<Button value="+" clicked={props.add}/>
 			</div>
 			<div className="rowC">
-				<Button value="0" clicked={props.normal}/>
-				<Button value="."/>
-				<Button value="+"/>
+				<Button className="zero" value={0} clicked={props.normal}/>
+				<Button value="Useless"/>
+				<Button value="." clicked={props.normal}/>
 				<Button value="=" clicked={props.equals}/>
 			</div>
 		</div>
