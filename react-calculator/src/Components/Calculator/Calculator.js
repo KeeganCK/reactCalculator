@@ -19,8 +19,8 @@ const calculator = props => {
 			</div>
 			<div className="rowC">
 				<Button value={7} clicked={props.normal}/>
-				<Button value={8} clicked={props.normal}/>
-				<Button value={9} clicked={props.normal}/>
+				<Button value={8} clicked={props.normal} />
+				<Button value={9} clicked={props.normal} />
 				<Button value="X" clicked={props.mul}/>
 			</div>
 			<div className="rowC">
